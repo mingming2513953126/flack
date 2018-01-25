@@ -1,0 +1,45 @@
+{% extends "back.html" %}
+{% block hello %}
+	<div class="container-fluid  beijing"  >
+      <div class="row-fluid">
+        <div class="span2">
+        </div><!--/span-->
+        <div class="span10">
+          <h4>注册用户列表</h4>
+	<table class="table table-hover" >
+	<thead>
+		<tr>
+			<th id="uer_id">用户id</th>
+			<th id="user_name">用户名</th>
+			<th id="password">密码</th>
+			<th id="status">状态</th>
+            <th id="level">用户级别</th>
+			<th id="user_zhuce_date">注册时间</th>
+			<th id="user_iphone">注册手机号</th>
+			<th id="user_qq">注册qq</th>
+            <th id="user_zhuce_email">注册邮箱</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for user_form in user_forms %}
+		<tr>
+			<td id="user_id">{{ user_form.user_id }}</td>
+			<td id="user_name">{{ user_form.user_name }}</td>
+			<td id="password">{{ user_form.password }}</td>
+        <td id="status">{{ user_form.status }}</td>
+			<td id="level">{{ user_form.level }}</td>
+			<td id="user_zhuce_date">{{ user_form.user_zhuce_date }}</td>
+        <td id="user_iphone">{{ user_form.user_iphone }}</td>
+			<td id="user_qq">{{ user_form.user_qq }}</td>
+            <td id="user_zhuce_email">{{ user_form.user_zhuce_email }}</td>
+            <td><a class="btn btn-sm btn-default" href="/eidituser/{{ user_form.user_name }}" role="button">编辑</a></td>
+        <td><a class="btn btn-sm btn-default" href="/delete/{{ user_form.user_name }}" role="button">删除</a></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+        </div>
+      </div>
+    </div>
+{% endblock %}

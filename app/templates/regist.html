@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block hello %}
+		<div class="container" id='rowadmin'>
+			<form action="{{ url_for('registser') }}" method="post" class="form-signin">
+				<h2 class="form-signin-heading">雷子API管理平台</h2>
+				{{ form.hidden_tag() }}
+				<table>
+					<tr>
+					  <td><b>用户名:</b></td>
+					  <td>{{ form.user_name(size=20, class="form-control") }}</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+					<tr>
+					  <td><b>密码:&nbsp;&nbsp;</b></td>
+					  <td>{{ form.password(size=20, class="form-control") }}</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+                    <tr>
+					  <td><b>确认密码:</b></td>
+					  <td>{{ form.que_password(size=20, class="form-control") }}</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+                    <tr>
+					  <td><b>qq:</b></td>
+					  <td>{{ form.qq(size=20, class="form-control") }}</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+                    <tr>
+					  <td><b>邮箱:</b></td>
+					  <td>{{ form.email(size=20, class="form-control") }}</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+                    <tr>
+					  <td><b>手机号:</b></td>
+					  <td>{{ form.iphone(size=20, class="form-control") }}</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td><button type="submit" class="btn btn-lg btn-primary" name="do_action" value="login" >注册</button></td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+				</table>
+                {% with messages = get_flashed_messages() %}
+                      {% if messages %}
+                        <ul class=flashes>
+                        {% for message in messages %}
+                          <li>{{ message }}</li>
+                        {% endfor %}
+                        </ul>
+                      {% endif %}
+                    {% endwith %}
+			</form>
+		</div>
+
+{% endblock %}

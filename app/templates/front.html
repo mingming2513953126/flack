@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block hello %}
+<div class="jumbotron">
+	<h1>模块</h1>
+	<p>API接口平台模块列表</p>
+        <p>可以通过模块列表快速查看模块，对应的模块可以查看相应的接口地址，</p>
+    <p>   在这里给你提供所有的参数模块，以及参数实例，方便你的学习</p>
+</div>
+{% endblock %}
+
+{% block model %}
+<div class="list-group">		
+	<a href="/font" class="list-group-item active">模块列表</a>
+	{% for model_form in model_forms %}
+	<a href="/front_model/{{ model_form.model_id }}" class="list-group-item">{{ model_form.model_name }}</a>
+	{% endfor %}
+</div>
+{% endblock %}

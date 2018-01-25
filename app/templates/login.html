@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block hello %}
+		<div class="container"  id='rowadmin'>
+			<form action="{{ url_for('login') }}" method="post" class="form-signin">
+				<h2 class="form-signin-heading">雷子API管理平台</h2>
+				{{ form.hidden_tag() }}
+				<table>
+					<tr>
+					  <td><b>用户名:</b></td>
+					  <td>{{ form.username(size=20, class="form-control") }}</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+					<tr>
+					  <td><b>密码:&nbsp;&nbsp;</b></td>
+					  <td>{{ form.password(size=20, class="form-control") }}</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td><button type="submit" class="btn btn-lg btn-primary" name="do_action" value="login" >登录</button>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/register">注册</a></td>
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+                    <tr>
+                          {% if messages %}
+                            <p class=flashes>
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </p>
+                      {% endif %}
+
+					</tr>
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+   <hr>
+
+      <div id="footer">
+      <div class="container">
+        <p class="muted credit"> @雷子API后台管理 BY  雷子 </p>
+      </div>
+    </div>
+		<script src="../static/js/jquery-2.1.4.min.js"></script>
+
+{% endblock %}

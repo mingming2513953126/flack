@@ -1,0 +1,91 @@
+2017-05-24 08:50:00,379 - ERROR - app.py - log_exception - 1560 - Exception on /front_interface/3&3 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\python-flask\app\views.py", line 88, in front_interface
+    n_parameter_request(parameter_request_forms, parameter_request_all[0].parameter_group_id)
+IndexError: list index out of range
+2017-05-24 08:50:03,912 - ERROR - app.py - log_exception - 1560 - Exception on /front_interface/3&3 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\Desktop\python-flask\app\views.py", line 88, in front_interface
+    n_parameter_request(parameter_request_forms, parameter_request_all[0].parameter_group_id)
+IndexError: list index out of range
+2018-01-25 21:18:55,944 - ERROR - app.py - log_exception - 1560 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\views.py", line 70, in dispatch_request
+    raise NotImplementedError()
+NotImplementedError
+2018-01-25 21:19:47,742 - ERROR - app.py - log_exception - 1560 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\views.py", line 70, in dispatch_request
+    raise NotImplementedError()
+NotImplementedError
+2018-01-25 21:21:02,826 - ERROR - app.py - log_exception - 1560 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\lh\AppData\Local\Programs\Python\Python36\lib\site-packages\flask\views.py", line 70, in dispatch_request
+    raise NotImplementedError()
+NotImplementedError
